@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>rwv.ui package &#8212; Race Walking Visualization  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="rwv package" href="rwv.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="rwv-ui-package">
+<h1>rwv.ui package<a class="headerlink" href="#rwv-ui-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-rwv.ui.double_list">
+<span id="rwv-ui-double-list-module"></span><h2>rwv.ui.double_list module<a class="headerlink" href="#module-rwv.ui.double_list" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rwv.ui.double_list.</span></span><span class="sig-name descname"><span class="pre">DoubleListWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comparison</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>Double List UI Widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>comparison</strong> (<em>function</em><em> or </em><em>None</em>) – An optional function to use when comparing items</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget.add_item">
+<span class="sig-name descname"><span class="pre">add_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_side</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Side.LEFT</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget.add_item" title="Link to this definition">¶</a></dt>
+<dd><p>Add a list of items and item_ids to a list side.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item</strong> (<em>str</em>) – Item string that will show on the list</p></li>
+<li><p><strong>item_id</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Item ID that will use to reference the item</p></li>
+<li><p><strong>list_side</strong> (<a class="reference internal" href="#rwv.ui.double_list.Side" title="rwv.ui.double_list.Side"><em>Side</em></a>) – Where the added item will be added… ‘left’ or ‘right’</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget.add_items">
+<span class="sig-name descname"><span class="pre">add_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_side</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Side.LEFT</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget.add_items" title="Link to this definition">¶</a></dt>
+<dd><p>Add a list of items and item_ids to a list side.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>items</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – List of strings to add</p></li>
+<li><p><strong>item_ids</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Item ids that will use to reference the associated items</p></li>
+<li><p><strong>list_side</strong> (<a class="reference internal" href="#rwv.ui.double_list.Side" title="rwv.ui.double_list.Side"><em>Side</em></a>) – Where the added items will be added… ‘left’ or ‘right’</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget.clear_items">
+<span class="sig-name descname"><span class="pre">clear_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_side</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Side.BOTH</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget.clear_items" title="Link to this definition">¶</a></dt>
+<dd><p>Clear the items on a specific side or both.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>list_side</strong> (<a class="reference internal" href="#rwv.ui.double_list.Side" title="rwv.ui.double_list.Side"><em>Side</em></a>) – Which list will be clear… ‘left’, ‘right’ or ‘both’</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget.get_selected_items">
+<span class="sig-name descname"><span class="pre">get_selected_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_side</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Side.RIGHT</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget.get_selected_items" title="Link to this definition">¶</a></dt>
+<dd><p>Return the selected item ids on a specific side or both.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>list_side</strong> (<a class="reference internal" href="#rwv.ui.double_list.Side" title="rwv.ui.double_list.Side"><em>Side</em></a>) – Which list will the selected item ids be returned… ‘left’, ‘right’ or ‘both’</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The selected item ids</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget.item_moved">
+<span class="sig-name descname"><span class="pre">item_moved</span></span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget.item_moved" title="Link to this definition">¶</a></dt>
+<dd><p>signals for when items are moved in a doublelist</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget.move_items">
+<span class="sig-name descname"><span class="pre">move_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget.move_items" title="Link to this definition">¶</a></dt>
+<dd><p>Move the selected items from source to destination.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> (<em>PyQt6.QtWidgets.QListWidget</em>) – The source list to get the selected items from</p></li>
+<li><p><strong>destination</strong> – The destination list to move the selected items to</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.double_list.DoubleListWidget.sort_list">
+<span class="sig-name descname"><span class="pre">sort_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_side</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.DoubleListWidget.sort_list" title="Link to this definition">¶</a></dt>
+<dd><p>Sort the list based on ID or the passed comparison function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>list_side</strong> (<a class="reference internal" href="#rwv.ui.double_list.Side" title="rwv.ui.double_list.Side"><em>Side</em></a>) – Which list will be sorted… ‘left’, ‘right’ or ‘both’</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rwv.ui.double_list.Side">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rwv.ui.double_list.</span></span><span class="sig-name descname"><span class="pre">Side</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.double_list.Side" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
+<p>Enum to reference the side of a doubleList</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rwv.ui.double_list.Side.BOTH">
+<span class="sig-name descname"><span class="pre">BOTH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#rwv.ui.double_list.Side.BOTH" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rwv.ui.double_list.Side.LEFT">
+<span class="sig-name descname"><span class="pre">LEFT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#rwv.ui.double_list.Side.LEFT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rwv.ui.double_list.Side.RIGHT">
+<span class="sig-name descname"><span class="pre">RIGHT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#rwv.ui.double_list.Side.RIGHT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-rwv.ui.main_window">
+<span id="rwv-ui-main-window-module"></span><h2>rwv.ui.main_window module<a class="headerlink" href="#module-rwv.ui.main_window" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="rwv.ui.main_window.MainWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rwv.ui.main_window.</span></span><span class="sig-name descname"><span class="pre">MainWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">screen</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.main_window.MainWindow" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMainWindow</span></code></p>
+<p>Main window for the app.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>screen</strong> (<em>PyQt6.QtGui.QScreen</em>) – The screen this app will be displayed on</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.main_window.MainWindow.open_db">
+<span class="sig-name descname"><span class="pre">open_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.main_window.MainWindow.open_db" title="Link to this definition">¶</a></dt>
+<dd><p>Event handler for when the user opens a new database.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.main_window.MainWindow.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.main_window.MainWindow.reset" title="Link to this definition">¶</a></dt>
+<dd><p>Return the main window to before a database was opened.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-rwv.ui.plot_widget">
+<span id="rwv-ui-plot-widget-module"></span><h2>rwv.ui.plot_widget module<a class="headerlink" href="#module-rwv.ui.plot_widget" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rwv.ui.plot_widget.</span></span><span class="sig-name descname"><span class="pre">MplCanvas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">FigureCanvasQTAgg</span></code></p>
+<p>MplCanvas sets up the graph canvas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>graph</strong> (<a class="reference internal" href="rwv.html#rwv.loc_graph.LocGraph" title="rwv.loc_graph.LocGraph"><em>LocGraph</em></a>) – The graph object being passed to display on the canvas</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas.plot_new_race">
+<span class="sig-name descname"><span class="pre">plot_new_race</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loc_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">judge_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">athletes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">judges</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas.plot_new_race" title="Link to this definition">¶</a></dt>
+<dd><p>Plot this graph based on new race data, removing all existing plots</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>loc_values</strong> (<em>dict</em><em>[</em><em>int</em><em>, </em><em>pandas.DataFrame</em><em>]</em>) – The LOC values to graph</p></li>
+<li><p><strong>judge_data</strong> (<em>dict</em><em>[</em><em>int</em><em>, </em><em>dict</em><em>[</em><em>int</em><em>, </em><em>pandas.DataFrame</em><em>]</em><em>]</em>) – The judge calls to graph</p></li>
+<li><p><strong>athletes</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>str</em><em>, </em><em>str</em><em>, </em><em>int</em><em>]</em><em>]</em>) – Information for each athlete that is graphed</p></li>
+<li><p><strong>judges</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – A list of judge ids for the judges involved in this race</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas.redraw_loc">
+<span class="sig-name descname"><span class="pre">redraw_loc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas.redraw_loc" title="Link to this definition">¶</a></dt>
+<dd><p>Redraw the loc line based on request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>loc</strong> (<em>int</em>) – The loc value where the new line should be drawn</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas.redraw_plot">
+<span class="sig-name descname"><span class="pre">redraw_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selected_athletes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas.redraw_plot" title="Link to this definition">¶</a></dt>
+<dd><p>Redraws the graph to display selected athletes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>selected_athletes</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – An array of bib numbers corresponding to athletes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas.redraw_points">
+<span class="sig-name descname"><span class="pre">redraw_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">visible</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas.redraw_points" title="Link to this definition">¶</a></dt>
+<dd><p>Redraw the specific point type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>point_type</strong> (<a class="reference internal" href="rwv.html#rwv.loc_graph.JudgeCallType" title="rwv.loc_graph.JudgeCallType"><em>loc_graph.JudgeCallType</em></a>) – The point type to draw</p></li>
+<li><p><strong>visible</strong> (<em>bool</em>) – Is the point visible</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas.save_figure_as_jpeg">
+<span class="sig-name descname"><span class="pre">save_figure_as_jpeg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas.save_figure_as_jpeg" title="Link to this definition">¶</a></dt>
+<dd><p>Saves the graph as a jpeg at a file path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> (<em>str</em>) – The file path to save the jpeg to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas.save_figure_as_pdf">
+<span class="sig-name descname"><span class="pre">save_figure_as_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas.save_figure_as_pdf" title="Link to this definition">¶</a></dt>
+<dd><p>Saves the graph as a pdf at a file path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> (<em>str</em>) – The file path to save the pdf to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.MplCanvas.select_new_judges">
+<span class="sig-name descname"><span class="pre">select_new_judges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selected_judges</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.MplCanvas.select_new_judges" title="Link to this definition">¶</a></dt>
+<dd><p>Select new judges for which the judge calls will be shown.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>selected_judges</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – A list of selected judges</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.PlotWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rwv.ui.plot_widget.</span></span><span class="sig-name descname"><span class="pre">PlotWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.PlotWidget" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>A widget containing the plot and its controls.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>window</strong> (<a class="reference internal" href="#rwv.ui.main_window.MainWindow" title="rwv.ui.main_window.MainWindow"><em>MainWindow</em></a>) – The window where this widget will be on</p></li>
+<li><p><strong>db</strong> (<a class="reference internal" href="rwv.html#rwv.db.DB" title="rwv.db.DB"><em>DB</em></a>) – The database this widget will use in order to graph</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.PlotWidget.fetch_judge_data">
+<span class="sig-name descname"><span class="pre">fetch_judge_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">judges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bibs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">race_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.PlotWidget.fetch_judge_data" title="Link to this definition">¶</a></dt>
+<dd><p>Fetch judge call data from the database, placing them into various buckets based on the involved bib and judge,
+as well as their call type. Also performs time conversion.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>judges</strong> (<em>list</em><em>[</em><em>tuple</em><em>]</em>) – Judge information for all judges in this race</p></li>
+<li><p><strong>bibs</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – All athlete bibs in this race</p></li>
+<li><p><strong>race_id</strong> (<em>int</em>) – ID of this race</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A map of judge calls where each judge call is categorized first by bib number, then by judge, finally by their type.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.PlotWidget.init_data_for_race">
+<span class="sig-name descname"><span class="pre">init_data_for_race</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">race_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.PlotWidget.init_data_for_race" title="Link to this definition">¶</a></dt>
+<dd><p>Returns data found in the race based on id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>race_id</strong> (<em>int</em>) – The ID of the race to initialize data for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing location values, judge data, and athletes</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.PlotWidget.init_interface_for_race">
+<span class="sig-name descname"><span class="pre">init_interface_for_race</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.PlotWidget.init_interface_for_race" title="Link to this definition">¶</a></dt>
+<dd><p>Plots the data based on the current race selected.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.PlotWidget.make_double_list_layout">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_double_list_layout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.PlotWidget.make_double_list_layout" title="Link to this definition">¶</a></dt>
+<dd><p>Create a double list layout consist of the doubleList and a label on top.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>label_text</strong> (<em>str</em>) – Text for the label</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rwv.ui.plot_widget.PlotWidget.save_current_graph">
+<span class="sig-name descname"><span class="pre">save_current_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rwv.ui.plot_widget.PlotWidget.save_current_graph" title="Link to this definition">¶</a></dt>
+<dd><p>Opens window for the user to save the current graph as PDF or JPEG.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-rwv.ui">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-rwv.ui" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Race Walking Visualization</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="rwv.html">rwv package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="rwv.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rwv.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rwv.html#module-rwv.db">rwv.db module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rwv.html#module-rwv.loc_graph">rwv.loc_graph module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rwv.html#module-rwv.main">rwv.main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rwv.html#module-rwv">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">rwv.ui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rwv.ui.double_list">rwv.ui.double_list module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rwv.ui.main_window">rwv.ui.main_window module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rwv.ui.plot_widget">rwv.ui.plot_widget module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rwv.ui">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="rwv.html">rwv package</a><ul>
+      <li>Previous: <a href="rwv.html" title="previous chapter">rwv package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/rwv.ui.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
