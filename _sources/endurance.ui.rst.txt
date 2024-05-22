@@ -1,0 +1,53 @@
+endurance.ui package
+====================
+
+Submodules
+----------
+
+endurance.ui.double\_list module
+--------------------------------
+
+.. automodule:: endurance.ui.double_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+endurance.ui.graph\_window module
+---------------------------------
+
+.. automodule:: endurance.ui.graph_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+endurance.ui.main\_window module
+--------------------------------
+
+.. automodule:: endurance.ui.main_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+endurance.ui.plot\_widget module
+--------------------------------
+
+.. automodule:: endurance.ui.plot_widget
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+endurance.ui.table\_window module
+---------------------------------
+
+.. automodule:: endurance.ui.table_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: endurance.ui
+   :members:
+   :undoc-members:
+   :show-inheritance:

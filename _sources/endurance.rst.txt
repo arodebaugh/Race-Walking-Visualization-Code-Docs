@@ -1,0 +1,53 @@
+endurance package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   endurance.ui
+
+Submodules
+----------
+
+endurance.db module
+-------------------
+
+.. automodule:: endurance.db
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+endurance.loc\_graph module
+---------------------------
+
+.. automodule:: endurance.loc_graph
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+endurance.main module
+---------------------
+
+.. automodule:: endurance.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+endurance.table\_to\_ppt module
+-------------------------------
+
+.. automodule:: endurance.table_to_ppt
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: endurance
+   :members:
+   :undoc-members:
+   :show-inheritance:
